@@ -16,13 +16,13 @@ const data = [
   { name: "Dec", earnings: 85 },
 ];
 
-const datas = ["Annualy", "Monthly"]; // Define the available years
+const datas = ["Annualy", "Monthly"];
 
 const OverviewGraph = () => {
-  const [selectedYear, setSelectedYear] = useState("Quarterly"); // Initial selected year as "Quarterly"
+  const [selectedYear, setSelectedYear] = useState("Quarterly");
 
   const handleYearChange = (e) => {
-    setSelectedYear(e.target.value); // Update the selected year when the dropdown changes
+    setSelectedYear(e.target.value);
   };
 
   return (

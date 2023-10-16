@@ -3,7 +3,6 @@ import PageCards from "../components/PageCards";
 import OverviewGraph from "../components/OverviewGraph";
 import "../index.css";
 import CustomerChart from "../components/CustomerChart";
-import "../app.css";
 import ProductSell from "../components/ProductSell";
 import Navbar from "../components/Navbar";
 

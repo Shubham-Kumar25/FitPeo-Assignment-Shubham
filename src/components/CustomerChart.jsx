@@ -21,9 +21,9 @@ const CustomerChart = () => {
   ];
 
   return (
-    <div className="customer-chart w-full rounded-lg bg-white shadow-lg p-4 relative">
+    <div className="relative w-full p-4 bg-white rounded-lg shadow-lg customer-chart">
       <div className="text-center md:text-start">
-        <h2 className="font-bold text-xl md:text-2xl">Customers</h2>
+        <h2 className="text-xl font-bold md:text-2xl">Customers</h2>
         <p className="text-gray-500">Customers that buy products</p>
       </div>
       <PieChart
@@ -51,7 +51,7 @@ const CustomerChart = () => {
           textAlign: "center",
         }}
       >
-        <p className="font-bold text-lg md:text-xl" style={{ margin: 0 }}>
+        <p className="text-lg font-bold md:text-xl" style={{ margin: 0 }}>
           65% <br />
           <span className="text-sm md:text-xl">Total New Customers</span>
         </p>

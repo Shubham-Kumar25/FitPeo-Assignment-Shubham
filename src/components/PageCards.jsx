@@ -13,7 +13,7 @@ const PageCards = () => {
       <div className="flex flex-col justify-between sm:flex-row">
         <Card
           icon={<FaDollarSign size={48} color="green" />}
-          title="Earning"
+          title="Earnings"
           value="$5,000"
           change={37.8}
           isIncrease={true}

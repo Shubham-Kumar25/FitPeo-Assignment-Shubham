@@ -6,12 +6,8 @@ import Sidebar from "./sidebar/Sidebar";
 const App = () => {
   return (
     <div className="flex">
-      <div>
-        <Sidebar />
-      </div>
-      <div>
-        <DashboardPage />
-      </div>
+      <Sidebar />
+      <DashboardPage />
     </div>
   );
 };

@@ -15,7 +15,7 @@ const products = [
   },
   {
     name: "Product B",
-    description: " If you are going to use a passage of Lorem Ipsum",
+    description: "If you are going to use a passage of Lorem Ipsum",
     stock: 50,
     price: "$20",
     totalSale: "$1000",

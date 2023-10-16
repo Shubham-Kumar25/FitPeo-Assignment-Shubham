@@ -16,8 +16,6 @@ const data = [
   { name: "Dec", earnings: 85 },
 ];
 
-const datas = ["Annualy", "Monthly"];
-
 const OverviewGraph = () => {
   const [selectedYear, setSelectedYear] = useState("Quarterly");
 
@@ -29,7 +27,7 @@ const OverviewGraph = () => {
     <div className="relative w-full p-4 bg-white rounded-lg shadow-lg overview-graph">
       <div className="mb-4">
         <h2 className="text-xl font-bold text-black md:text-2xl">Overview</h2>
-        <p className="text-gray-500">Monthly Earning</p>
+        <p className="text-gray-500">Monthly Earnings</p>
       </div>
       <div className="absolute top-0 m-4 right-4">
         <select
@@ -39,7 +37,7 @@ const OverviewGraph = () => {
           className="p-2 border rounded"
         >
           <option value="Quarterly">Quarterly</option>
-          {datas.map((data) => (
+          {["Annual", "Monthly"].map((data) => (
             <option key={data} value={data}>
               {data}
             </option>

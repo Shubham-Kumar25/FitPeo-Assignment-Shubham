@@ -19,7 +19,8 @@
     "react-dom": "^18.2.0",
     "react-icons": "^4.11.0",
     "react-minimal-pie-chart": "^8.4.0",
-    "recharts": "^2.9.0"
+    "recharts": "^2.9.0",
+    "victory": "^36.6.11"
   },
   "devDependencies": {
     "@types/react": "^18.2.15",

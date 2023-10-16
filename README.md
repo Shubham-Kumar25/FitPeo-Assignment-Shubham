@@ -1,4 +1,4 @@
-# React.js Dashboard 
+# React.js Dashboard [FitPeo]
 
 This project is a dashboard built with React.js and Tailwind CSS. It includes various features and libraries to create a responsive and user-friendly dashboard.
 

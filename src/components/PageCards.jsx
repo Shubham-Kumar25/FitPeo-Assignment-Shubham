@@ -10,13 +10,14 @@ import Card from "./Card";
 const PageCards = () => {
   return (
     <div className="p-2">
-      <div className="flex flex-col sm:flex-row justify-between">
+      <div className="flex flex-col justify-between sm:flex-row">
         <Card
           icon={<FaDollarSign size={48} color="green" />}
           title="Earning"
           value="$5,000"
           change={37.8}
           isIncrease={true}
+          color="green"
         />
         <Card
           icon={<FaShoppingCart size={48} color="indigo" />}
@@ -24,6 +25,7 @@ const PageCards = () => {
           value="500"
           change={8.2}
           isIncrease={true}
+          color="indigo"
         />
         <Card
           icon={<FaBalanceScale size={48} color="blue" />}
@@ -31,6 +33,7 @@ const PageCards = () => {
           value="$10,000"
           change={-5.3}
           isIncrease={false}
+          color="blue"
         />
         <Card
           icon={<FaChartBar size={48} color="red" />}
@@ -38,6 +41,7 @@ const PageCards = () => {
           value="$25,000"
           change={12.5}
           isIncrease={true}
+          color="red"
         />
       </div>
     </div>

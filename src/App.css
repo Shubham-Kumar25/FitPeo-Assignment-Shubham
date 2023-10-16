@@ -5,7 +5,6 @@
   }
 }
 
-/* For medium screens */
 @media (min-width: 768px) {
   .overview-graph {
     width: 70%;
@@ -15,7 +14,6 @@
   }
 }
 
-/* For all screens */
 .overview-graph,
 .customer-chart {
   height: 500px;

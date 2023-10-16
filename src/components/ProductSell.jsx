@@ -1,9 +1,8 @@
 import React from "react";
 import { FaSearch } from "react-icons/fa";
-import productAImage from "../assets/product-a.jpg"; // Import the image
-import productBImage from "../assets/product-b.jpg"; // Import the image
+import productAImage from "../assets/product-a.jpg";
+import productBImage from "../assets/product-b.jpg";
 
-// Sample product data
 const products = [
   {
     name: "Product A",
@@ -12,7 +11,7 @@ const products = [
     stock: 100,
     price: "$10",
     totalSale: "$1000",
-    image: productAImage, // Use the imported image
+    image: productAImage,
   },
   {
     name: "Product B",
@@ -20,26 +19,25 @@ const products = [
     stock: 50,
     price: "$20",
     totalSale: "$1000",
-    image: productBImage, // Use the imported image
+    image: productBImage,
   },
-  // Add more products as needed
 ];
 
 const ProductSell = () => {
   return (
-    <div className="p-4 m-4 md:p-6 bg-white rounded-lg shadow-lg">
-      <div className="flex flex-col items-center md:flex-row justify-between">
-        <h1 className="text-2xl font-bold mb-4">Product Sell</h1>
+    <div className="p-4 m-4 bg-white rounded-lg shadow-lg md:p-6">
+      <div className="flex flex-col items-center justify-between md:flex-row">
+        <h1 className="mb-4 text-2xl font-bold">Product Sell</h1>
         <div className="flex items-center space-x-4">
           <div className="relative flex items-center">
             <FaSearch className="absolute text-gray-400 left-2" />
             <input
               type="text"
               placeholder="Search"
-              className="py-2 pl-8 pr-3 border rounded-lg w-24 md:w-full" // Reduce width on mobile screens
+              className="w-24 py-2 pl-8 pr-3 border rounded-lg md:w-full"
             />
           </div>
-          <select className="p-2 border rounded-lg w-24 md:w-full">
+          <select className="w-24 p-2 border rounded-lg md:w-full">
             <option>Last 7 days</option>
             <option selected>Last 30 days</option>
             <option>Last 90 days</option>
@@ -47,7 +45,7 @@ const ProductSell = () => {
         </div>
       </div>
 
-      <div className="overflow-x-auto mt-4">
+      <div className="mt-4 overflow-x-auto">
         <table className="w-full">
           <thead>
             <tr className="bg-gray-100 border-b">
@@ -65,7 +63,7 @@ const ProductSell = () => {
                     <img
                       src={product.image}
                       alt={product.name}
-                      className="w-16 object-contain h-12 mr-2 rounded-lg hidden md:block"
+                      className="hidden object-contain w-16 h-12 mr-2 rounded-lg md:block"
                     />
                     <div>
                       <p className="text-lg font-semibold">{product.name}</p>

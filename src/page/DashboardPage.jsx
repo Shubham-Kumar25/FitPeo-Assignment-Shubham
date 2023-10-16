@@ -1,7 +1,6 @@
 import React from "react";
-
-import PageCards from "../components/PageCards"; // Import the PageCards component
-import OverviewGraph from "../components/OverviewGraph"; // Import the OverviewGraph component
+import PageCards from "../components/PageCards";
+import OverviewGraph from "../components/OverviewGraph";
 import "../index.css";
 import CustomerChart from "../components/CustomerChart";
 import "../app.css";
@@ -10,10 +9,10 @@ import Navbar from "../components/Navbar";
 
 function DashboardPage() {
   return (
-    <div className="md:ml-64">
+    <div className="">
       <Navbar />
-      <PageCards /> {/* Include the PageCards component here */}
-      <div className="md:flex md:gap-2 md:space-y-0 space-y-4 m-4 items-start justify-between">
+      <PageCards />
+      <div className="items-start justify-between m-4 space-y-4 md:flex md:gap-2 md:space-y-0">
         <OverviewGraph />
         <CustomerChart />
       </div>

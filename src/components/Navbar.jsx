@@ -1,30 +1,31 @@
 import React, { useState } from "react";
 import { FaSearch, FaBars } from "react-icons/fa";
-import Sidebar from "../sidebar/Sidebar";
+import MSidebar from "../sidebar/MSidebar";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [showSidebar, setShowSidebar] = useState(false);
 
   const toggleNavbar = () => {
     setIsOpen(!isOpen);
-    return <Sidebar />;
+    setShowSidebar(!showSidebar); // Toggle the sidebar state
   };
 
   return (
-    <nav className="p-4 z-10 flex justify-between items-center">
-      <div className="md:hidden flex justify-between items-center w-full">
+    <nav className="z-10 flex items-center justify-between p-4">
+      <div className="flex items-center justify-between w-full md:hidden">
         <FaBars
           className="text-2xl text-black cursor-pointer"
           onClick={toggleNavbar}
         />
-        <div className="flex-grow"></div> {/* Empty space */}
+        <div className="flex-grow"></div>
         <FaSearch className="text-xl text-black cursor-pointer" />
       </div>
-      <div className="hidden md:flex justify-between items-center w-full">
-        <div className="text-xl font-semibold text-black flex-grow">
+      <div className="items-center justify-between hidden w-full md:flex">
+        <div className="flex-grow text-xl font-semibold text-black">
           Hello Shubham👋,
         </div>
-        <div className="ml-4 relative flex items-center">
+        <div className="relative flex items-center ml-4">
           <FaSearch className="absolute text-gray-600 left-3 top-3" />
           <input
             type="text"
@@ -33,6 +34,8 @@ const Navbar = () => {
           />
         </div>
       </div>
+      {showSidebar && <MSidebar />}
+      {/* Conditionally render the sidebar */}
     </nav>
   );
 };

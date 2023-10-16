@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   FaUser,
   FaChartBar,
@@ -8,15 +8,29 @@ import {
   FaTachometerAlt,
   FaShoppingCart,
   FaArrowRight,
+  FaTimes,
 } from "react-icons/fa";
 import { MdExpandMore } from "react-icons/md";
 
-const Sidebar = () => {
+const MSidebar = () => {
+  const [isOpen, setIsOpen] = useState(true);
+
+  const toggleSidebar = () => {
+    setIsOpen(!isOpen);
+  };
+
   return (
-    <div className="fixed left-0 z-10 hidden w-64 h-full text-white md:block bg-indigo-950">
+    <div
+      className={`fixed z-10 w-full md:hidden h-screen text-white top-0 right-0 left-0 bottom-0 ${
+        isOpen ? "block" : "hidden"
+      } bg-indigo-950`}
+    >
       <div className="px-4 py-5">
         <h1 className="flex items-center text-2xl font-semibold">
           <FaTachometerAlt className="mr-2" /> Dashboard
+          <button className="ml-auto text-white" onClick={toggleSidebar}>
+            <FaTimes className="mr-4" />
+          </button>
         </h1>
       </div>
       <ul className="mt-6 space-y-4">
@@ -82,4 +96,4 @@ const Sidebar = () => {
   );
 };
 
-export default Sidebar;
+export default MSidebar;

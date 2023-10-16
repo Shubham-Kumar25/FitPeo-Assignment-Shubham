@@ -26,12 +26,12 @@ const OverviewGraph = () => {
   };
 
   return (
-    <div className="overview-graph w-full p-4 bg-white rounded-lg shadow-lg relative">
+    <div className="relative w-full p-4 bg-white rounded-lg shadow-lg overview-graph">
       <div className="mb-4">
-        <h2 className="text-xl md:text-2xl font-bold text-black">Overview</h2>
+        <h2 className="text-xl font-bold text-black md:text-2xl">Overview</h2>
         <p className="text-gray-500">Monthly Earning</p>
       </div>
-      <div className="absolute top-0 right-4 m-4">
+      <div className="absolute top-0 m-4 right-4">
         <select
           id="yearSelect"
           value={selectedYear}
@@ -46,7 +46,7 @@ const OverviewGraph = () => {
           ))}
         </select>
       </div>
-      <div className="h-60 md:h-80 lg:h-96 mt-8 md:mt-12 lg:mt-16">
+      <div className="mt-8 h-60 md:h-80 lg:h-96 md:mt-12 lg:mt-16">
         <ResponsiveContainer width="100%" height="100%">
           <BarChart
             data={data}

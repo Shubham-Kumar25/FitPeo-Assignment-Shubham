@@ -3,5 +3,11 @@
 @tailwind utilities;
 
 body {
-  background-color: #e2e8f0;
+  background-color: #f1f1f3;
+}
+
+@media (min-width: 768px) {
+  body {
+    padding-left: 256px;
+  }
 }

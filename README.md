@@ -10,7 +10,7 @@ This project is a dashboard built with React.js and Tailwind CSS. It includes va
 
 - **Recharts**: The Recharts library is integrated for creating interactive and visually appealing charts and graphs.
 
-- **Mobile Responsive**: The template is designed to be fully responsive, ensuring it looks and works well on mobile devices. Please remember to reload the page when checking mobile responsiveness.
+- **Mobile Responsive**: The template is designed to be fully responsive, ensuring it looks and works well on mobile devices. Please remember to <span style="color: red; font-weight: bold;">reload the page</span> when checking mobile responsiveness.
 
 ## Live Demo
 

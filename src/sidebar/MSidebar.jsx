@@ -21,7 +21,7 @@ const MSidebar = () => {
 
   return (
     <div
-      className={`fixed z-10 w-full md:hidden h-screen text-white top-0 right-0 left-0 bottom-0 ${
+      className={`fixed z-10 w-full md:hidden h-full text-white top-0 right-0 left-0 bottom-0 ${
         isOpen ? "block" : "hidden"
       } bg-indigo-950`}
     >

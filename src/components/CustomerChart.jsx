@@ -4,18 +4,19 @@ import { PieChart } from "react-minimal-pie-chart";
 const CustomerChart = () => {
   const data = [
     {
-      title: "Indigo Gradient",
-      value: 45,
-      color: "rgba(75, 0, 130, 0.8)",
-    },
-    {
       title: "Red Gradient",
-      value: 20,
+      value: 15,
       color: "rgba(255, 0, 0, 0.8)",
     },
     {
+      title: "Indigo Gradient",
+      value: 65,
+      color: "rgba(75, 0, 130, 0.8)",
+    },
+
+    {
       title: "Empty",
-      value: 35,
+      value: 20,
       color: "rgba(236, 236, 236, 1)",
     },
   ];

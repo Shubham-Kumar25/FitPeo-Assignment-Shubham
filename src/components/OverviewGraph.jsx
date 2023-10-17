@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { BarChart, Bar, XAxis, ResponsiveContainer } from "recharts";
+import { BarChart, Bar, XAxis, ResponsiveContainer, Tooltip } from "recharts";
 
 const data = [
   { name: "Jan", earnings: 50 },
@@ -51,6 +51,7 @@ const OverviewGraph = () => {
             margin={{ top: 20, right: 30, left: 20, bottom: 30 }}
           >
             <XAxis dataKey="name" axisLine={false} tickLine={false} />
+            <Tooltip cursor={{ fill: "rgba(75,0,130,0.1)" }} />
             <Bar dataKey="earnings" shape={<RoundBar />} fill="#A79BE4" />
           </BarChart>
         </ResponsiveContainer>

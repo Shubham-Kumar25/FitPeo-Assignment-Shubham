@@ -13,7 +13,6 @@ const Navbar = () => {
 
   return (
     <nav className="z-10 flex items-center justify-between p-4">
-      {/* Mobile Navbar */}
       <div className="flex items-center justify-between w-full md:hidden">
         <FaBars
           className="text-2xl cursor-pointer text-indigo-950"
@@ -26,7 +25,6 @@ const Navbar = () => {
         <FaSearch className="text-xl text-black cursor-pointer" />
       </div>
 
-      {/* Desktop Navbar */}
       <div className="items-center justify-between hidden w-full md:flex">
         <div className="flex-grow text-xl font-semibold text-black">
           Hello Shubham👋,

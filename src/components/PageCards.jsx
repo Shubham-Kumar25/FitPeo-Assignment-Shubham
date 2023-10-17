@@ -10,7 +10,7 @@ import Card from "./Card";
 const PageCards = () => {
   return (
     <div className="p-2">
-      <div className="flex flex-col justify-between sm:flex-row">
+      <div className="flex flex-col justify-evenly sm:flex-row">
         <Card
           icon={<FaDollarSign size={48} color="green" />}
           title="Earnings"

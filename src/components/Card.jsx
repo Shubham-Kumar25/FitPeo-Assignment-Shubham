@@ -14,7 +14,7 @@ const Card = ({ icon, title, value, change, color, isIncrease }) => {
   const backgroundColorClass = backgroundColorClasses[color] || "bg-gray-300";
 
   return (
-    <div className="w-full p-2 sm:w-1/2 md:w-1/2 lg:w-1/4 xl:w-1/4">
+    <div className="w-full p-2 sm:w-56 ">
       <div className="p-4 bg-white rounded-lg shadow-lg">
         <div className="flex items-center mb-4 space-x-4 justify-evenly">
           {/* Display the icon with the specified or default background color */}

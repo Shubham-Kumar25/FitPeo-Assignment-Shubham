@@ -8,7 +8,7 @@ const products = [
     name: "Product A",
     description:
       "There are many variations of passages of Lorem Ipsum available",
-    stock: 100,
+    stock: 105,
     price: "$10",
     totalSale: "$1000",
     image: productAImage,
@@ -16,9 +16,26 @@ const products = [
   {
     name: "Product B",
     description: "If you are going to use a passage of Lorem Ipsum",
-    stock: 50,
+    stock: 55,
     price: "$20",
-    totalSale: "$1000",
+    totalSale: "$1020",
+    image: productBImage,
+  },
+  {
+    name: "Product C",
+    description:
+      "Contrary to popular belief, Lorem Ipsum is not simply random text",
+    stock: 400,
+    price: "$99",
+    totalSale: "$2500",
+    image: productAImage,
+  },
+  {
+    name: "Product D",
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+    stock: 20,
+    price: "$5",
+    totalSale: "$800",
     image: productBImage,
   },
 ];

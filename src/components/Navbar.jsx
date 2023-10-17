@@ -16,9 +16,12 @@ const Navbar = () => {
       {/* Mobile Navbar */}
       <div className="flex items-center justify-between w-full md:hidden">
         <FaBars
-          className="text-2xl text-black cursor-pointer"
+          className="text-2xl cursor-pointer text-indigo-950"
           onClick={toggleNavbar}
         />
+        <div className="p-4 text-lg font-medium text-black">
+          Hello Shubham👋,
+        </div>
         <div className="flex-grow"></div>
         <FaSearch className="text-xl text-black cursor-pointer" />
       </div>

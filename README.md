@@ -30,7 +30,7 @@ You can view a live demo of this dashboard template at the following link: [Live
 
 3. Start the development server:
    ```bash
-   npm start
+   npm run dev
    ```
 
 4. Open your web browser and navigate to [http://localhost:3000](http://localhost:3000) to view the project.

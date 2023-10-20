@@ -33,7 +33,7 @@ You can view a live demo of this dashboard template at the following link: [Live
    npm run dev
    ```
 
-4. Open your web browser and navigate to [http://localhost:3000](http://localhost:3000) or (http://localhost:5173/) to view the project.
+4. Open your web browser and navigate to [http://localhost:3000] or [http://localhost:5173/] to view the project.
 
 ## Structure
 
